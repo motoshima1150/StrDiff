@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D75E3BE01F0FD9C100124D3D /* StrDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75E3BDF1F0FD9C100124D3D /* StrDiff.swift */; };
 		D76296981F0FCD0E0008DB86 /* StrDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D762968E1F0FCD0D0008DB86 /* StrDiff.framework */; };
 		D762969D1F0FCD0E0008DB86 /* StrDiffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762969C1F0FCD0E0008DB86 /* StrDiffTests.swift */; };
 		D762969F1F0FCD0E0008DB86 /* StrDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = D76296911F0FCD0D0008DB86 /* StrDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D75E3BDF1F0FD9C100124D3D /* StrDiff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrDiff.swift; sourceTree = "<group>"; };
 		D762968E1F0FCD0D0008DB86 /* StrDiff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StrDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76296911F0FCD0D0008DB86 /* StrDiff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrDiff.h; sourceTree = "<group>"; };
 		D76296921F0FCD0D0008DB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D76296911F0FCD0D0008DB86 /* StrDiff.h */,
+				D75E3BDF1F0FD9C100124D3D /* StrDiff.swift */,
 				D76296921F0FCD0D0008DB86 /* Info.plist */,
 			);
 			path = StrDiff;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					D762968D1F0FCD0D0008DB86 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D76296961F0FCD0E0008DB86 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75E3BE01F0FD9C100124D3D /* StrDiff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +266,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -308,6 +313,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,6 +326,7 @@
 		D76296A31F0FCD0E0008DB86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -328,9 +335,11 @@
 				INFOPLIST_FILE = StrDiff/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.motoshima1150.StrDiff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +347,7 @@
 		D76296A41F0FCD0E0008DB86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -346,6 +356,7 @@
 				INFOPLIST_FILE = StrDiff/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.motoshima1150.StrDiff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -356,6 +367,7 @@
 		D76296A61F0FCD0E0008DB86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = StrDiffTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.motoshima1150.StrDiffTests;
@@ -367,6 +379,7 @@
 		D76296A71F0FCD0E0008DB86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = StrDiffTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.motoshima1150.StrDiffTests;
@@ -394,6 +407,7 @@
 				D76296A41F0FCD0E0008DB86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D76296A51F0FCD0E0008DB86 /* Build configuration list for PBXNativeTarget "StrDiffTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +416,7 @@
 				D76296A71F0FCD0E0008DB86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
